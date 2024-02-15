@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(
         color: Color.fromRGBO(227, 194, 96, 1.000),
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromRGBO(255, 251, 254, 1.000),
         animationDuration: Duration(milliseconds: 250),
         key: _bottomNavigationKey,
         items: <Widget>[
@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
           });
         },
       ),
-      body: _screens[_page], // Display the selected screen
+      body: _screens[_page],
     );
   }
 }
