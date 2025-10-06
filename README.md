@@ -1,16 +1,37 @@
-# lipi
+# 🧠 LIPI AI  
+### Tibetan–English OCR and Neural Machine Translation System  
 
-A new Flutter project.
+LIPI-AI is a research-oriented project that automates the conversion of **Tibetan script images into English text** through an integrated **Computer Vision (CV)** and **Natural Language Processing (NLP)** pipeline.  
+It combines image preprocessing, OCR extraction, and Transformer-based translation within a unified, modular architecture.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Overview
 
-A few resources to get you started if this is your first Flutter project:
+Developed under the **Student Research Council Nepal**, this project explores multilingual AI applications in **low-resource language translation**.  
+The system performs three major tasks:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. **Image Preprocessing** – using OpenCV for denoising, normalization, and segmentation of Tibetan text images.  
+2. **Optical Character Recognition (OCR)** – extracting raw Tibetan text from processed images.  
+3. **Neural Machine Translation (NMT)** – converting Tibetan text to English using a pretrained Transformer model.  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A lightweight **Flask API** connects the backend model to a **Flutter frontend**, enabling real-time translation demos for research and testing.
+
+---
+
+## 🧩 System Architecture
+
+```text
+Tibetan Image
+     │
+     ▼
+[1] Preprocessing (OpenCV)
+     │
+     ▼
+[2] OCR (Character Extraction)
+     │
+     ▼
+[3] Transformer Model (NMT)
+     │
+     ▼
+[4] Flask API → Flutter Frontend
